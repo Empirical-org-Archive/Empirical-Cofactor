@@ -1,0 +1,24 @@
+h1= @team.name.titleize
+
+ul.nav.nav-tabs
+  - @team.pages.each do |page|
+    li: a href="#page-#{page.id}" data-toggle="tab" = page.name.titleize
+
+.tab-content.cofactor-page
+  - @team.pages.each do |page|
+    .tab-pane id="page-#{page.id}": iframe src=page.url
+
+javascript:
+  jQuery(function ($) {
+    $('.nav.nav-tabs li a:first').click();
+
+    function resizeIframe () {
+      $('.cofactor-page iframe').each(function () {
+        $i = $(this);
+
+        $i.height(window.innerHeight - $i.offset().top);
+      });
+    };
+
+    setTimeout(function () { setInterval(resizeIframe, 500) }, 100);
+  });

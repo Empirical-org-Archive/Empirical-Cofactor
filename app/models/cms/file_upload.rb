@@ -3,8 +3,6 @@ class CMS::FileUpload < ActiveRecord::Base
 
   mount_uploader :file, CMS::Uploader
 
-  belongs_to :author, class_name: 'User'
-
   def self.name
     'FileUpload'
   end

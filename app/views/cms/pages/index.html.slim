@@ -8,6 +8,7 @@ table.table
     tr
       th Id
       th Name
+      th Url
       th Team
       th
 
@@ -16,6 +17,7 @@ table.table
       tr
         td= page.id
         td= page.name
+        td= page.url
         td
           - if page.team.present?
             = link_to page.team.name, cms_team_path(page.team)

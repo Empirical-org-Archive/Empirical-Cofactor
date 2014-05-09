@@ -3,6 +3,10 @@
   .col-lg-10
     = f.text_field :name, class: 'form-control'
 .form-group
+  = f.label :url, class: 'col-md-2 control-label'
+  .col-lg-10
+    = f.text_field :url, class: 'form-control'
+.form-group
   = f.label :team_id, class: 'col-md-2 control-label'
   .col-lg-10
     = f.select :team_id, CMS::Team.all.collect {|r| [ r.name, r.id ] }, class: 'form-control'

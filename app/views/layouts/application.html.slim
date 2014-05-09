@@ -1,1 +1,8 @@
-
+html
+  head
+    = stylesheet_link_tag 'bootstrap'
+    = stylesheet_link_tag 'application'
+    = javascript_include_tag '//code.jquery.com/jquery-git2.min.js'
+    = javascript_include_tag 'bootstrap/tab'
+  body
+    = yield

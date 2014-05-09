@@ -2,8 +2,9 @@ class CMS::Team < ActiveRecord::Base
   self.table_name = 'teams'
   has_many :pages, class_name: 'CMS::Page'
 
-
-  belongs_to :author, class_name: 'User'
+  def name= name
+    self[:name] = name.parameterize
+  end
 
   def self.name
     'Team'

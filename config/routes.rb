@@ -3,4 +3,10 @@ Rails.application.routes.draw do
 
   root to: 'pages#home'
   resource :session
+
+  namespace 'cofactor', module: nil do
+    root to: 'cofactor#index'
+
+    resources :teams
+  end
 end

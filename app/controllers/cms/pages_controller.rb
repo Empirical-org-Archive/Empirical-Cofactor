@@ -8,7 +8,7 @@ class CMS::PagesController < CMS::BaseController
   end
 
   def page_params
-    params.require(:page).permit(:name, :team_id)
+    params.require(:page).permit(:name, :team_id, :url)
   end
   alias :subject_params :page_params
 end

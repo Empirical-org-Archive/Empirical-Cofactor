@@ -1,0 +1,3 @@
+- @teams.each do |team|
+  .team-item
+    = link_to team.name.titleize, cofactor_team_path(team.name.parameterize)

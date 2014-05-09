@@ -35,3 +35,4 @@ gem 'slim-rails'
 
 gem 'bootstrap-sass'
 gem 'kaminari'
+gem 'better_errors'
