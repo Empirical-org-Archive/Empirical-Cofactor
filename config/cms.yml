@@ -1,0 +1,24 @@
+content_types:
+  FileUpload:
+    attributes:
+      name: string
+      file: file
+      description: text
+  PageArea:
+    attributes:
+      name: string
+      description: string
+      content: html
+  Team:
+    attributes:
+      name: string
+  Page:
+    attributes:
+      name: string
+      url: string
+      team:
+        format: reference
+        reference_to: Team
+        reference_label: name
+
+pages: []

@@ -28,3 +28,10 @@ gem 'bcrypt', '~> 3.1.7'
 
 # Use unicorn as the app server
 gem 'unicorn'
+
+gem 'honey-cms'
+
+gem 'slim-rails'
+
+gem 'bootstrap-sass'
+gem 'kaminari'

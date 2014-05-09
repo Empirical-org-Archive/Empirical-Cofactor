@@ -1,0 +1,5 @@
+.panel-heading: .panel-title: h5 Edit page
+
+.panel-body
+  = form_for @page, url: cms_page_path(@page), html: {class: 'form-horizontal'} do |f|
+    = render partial: 'fields', locals: { f: f }

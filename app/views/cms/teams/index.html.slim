@@ -1,0 +1,22 @@
+.panel-heading: .panel-title: h5 Teams
+
+.panel-body
+  = link_to 'New team', new_cms_team_path
+
+table.table
+  thead
+    tr
+      th Id
+      th Name
+      th
+
+  tbody
+    - @teams.each do |team|
+      tr
+        td= team.id
+        td= team.name
+        td
+          span<>= link_to 'Edit', edit_cms_team_path(team)
+          span<>= link_to 'Destroy', cms_team_path(team), confirm: 'are you sure?', method: 'delete'
+
+  = paginate @teams
