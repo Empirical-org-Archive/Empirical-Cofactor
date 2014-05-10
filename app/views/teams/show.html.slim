@@ -1,16 +1,17 @@
-h1= @team.name.titleize
+article.cofactor-team-page
+  h1 Cofactor: #{@team.name.titleize}
 
-ul.nav.nav-tabs
-  - @team.pages.each do |page|
-    li: a href="#page-#{page.id}" data-toggle="tab" = page.name.titleize
+  ul.nav.nav-pills
+    - @team.pages.each do |page|
+      li: a href="#page-#{page.id}" data-toggle="tab" = page.name.titleize
 
-.tab-content.cofactor-page
-  - @team.pages.each do |page|
-    .tab-pane id="page-#{page.id}": iframe src=page.url
+  .tab-content.team-page-item
+    - @team.pages.each do |page|
+      .tab-pane id="page-#{page.id}": iframe src=page.url
 
 javascript:
   jQuery(function ($) {
-    $('.nav.nav-tabs li a:first').click();
+    $('.nav.nav-pills li a:first').click();
 
     function resizeIframe () {
       $('.cofactor-page iframe').each(function () {
