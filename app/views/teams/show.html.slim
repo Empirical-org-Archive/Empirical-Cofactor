@@ -1,5 +1,7 @@
 article.cofactor-team-page
-  h1 Cofactor: #{@team.name.titleize}
+  h1
+    = link_to 'Cofactor', '/cofactor'
+    span = ": #{@team.name.titleize}"
 
   ul.nav.nav-pills
     - @team.pages.each do |page|

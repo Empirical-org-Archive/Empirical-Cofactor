@@ -7,6 +7,9 @@
     margin: 0 0 5px 0;
     padding: $pad 0 0 $pad;
     font-size: 14px;
+    a, a:active {
+      color: white;
+    }
   }
 
   ul.nav {
