@@ -12,6 +12,7 @@ content_types:
   Team:
     attributes:
       name: string
+      description: text
   Page:
     attributes:
       name: string

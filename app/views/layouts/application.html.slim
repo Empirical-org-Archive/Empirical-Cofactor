@@ -4,5 +4,13 @@ html
     = stylesheet_link_tag 'application'
     = javascript_include_tag '//code.jquery.com/jquery-git2.min.js'
     = javascript_include_tag 'bootstrap/tab'
+    link href="http://fonts.googleapis.com/css?family=Libre+Baskerville|Open+Sans" rel="stylesheet" type="text/css"
+    scss:
+      @mixin baskerville { font-family: 'Libre Baskerville', serif }
+      @mixin open-sans   { font-family: 'Open Sans', sans-serif }
+
+      h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+        @include baskerville;
+      }
   body
-    = yield
+    .container= yield
