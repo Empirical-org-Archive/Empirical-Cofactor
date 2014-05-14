@@ -8,7 +8,7 @@ class CMS::TeamsController < CMS::BaseController
   end
 
   def team_params
-    params.require(:team).permit(:description, :name)
+    params.require(:team).permit(:description, :name, :slug)
   end
   alias :subject_params :team_params
 end

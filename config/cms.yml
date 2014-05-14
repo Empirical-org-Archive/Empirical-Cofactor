@@ -13,6 +13,7 @@ content_types:
     attributes:
       name: string
       description: text
+      slug: string
   Page:
     attributes:
       name: string

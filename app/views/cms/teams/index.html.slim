@@ -9,6 +9,7 @@ table.table
       th Id
       th Name
       th Description
+      th Slug
       th
 
   tbody
@@ -17,6 +18,7 @@ table.table
         td= team.id
         td= team.name
         td= team.description
+        td= team.slug
         td
           span<>= link_to 'Edit', edit_cms_team_path(team)
           span<>= link_to 'Destroy', cms_team_path(team), confirm: 'are you sure?', method: 'delete'
