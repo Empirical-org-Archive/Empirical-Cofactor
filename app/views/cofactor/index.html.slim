@@ -4,5 +4,5 @@ p Empirical is an open source organizations composed of teams of contributors. E
 - @teams.each do |team|
   hr
   .team-item
-    h2= link_to team.name.titleize, cofactor_team_path(team.name.parameterize)
-    p= team.description
+    h2= link_to team.name, cofactor_team_path(team.slug), style: 'color: inherit; text-decoration: underline'
+    p= markdown team.description.to_s
