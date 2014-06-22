@@ -13,9 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20140514211305) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
   create_table "file_uploads", force: true do |t|
     t.string   "name"
     t.string   "file"
@@ -40,7 +37,7 @@ ActiveRecord::Schema.define(version: 20140514211305) do
     t.datetime "updated_at"
   end
 
-  add_index "pages", ["team_id"], name: "index_pages_on_team_id", using: :btree
+  add_index "pages", ["team_id"], name: "index_pages_on_team_id"
 
   create_table "teams", force: true do |t|
     t.string   "name"
