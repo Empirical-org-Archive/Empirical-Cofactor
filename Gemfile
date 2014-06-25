@@ -6,6 +6,8 @@ gem 'rails', '4.1.1'
 gem 'pg', group: :production
 gem 'sqlite3', group: :development
 gem 'rails_12factor', '0.0.2', group: :production
+gem 'underscore-rails'
+gem 'rails-backbone'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
@@ -35,8 +37,12 @@ gem 'honey-cms'
 
 gem 'slim-rails'
 
+group :development do
+  gem "better_errors"
+  gem 'binding_of_caller'
+end
+
 gem 'bootstrap-sass'
 gem 'kaminari'
-gem 'better_errors'
 gem 'carrierwave'
-gem 'binding_of_caller'
+
