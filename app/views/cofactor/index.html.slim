@@ -1,9 +1,11 @@
 .container style="max-width: 670px"
   h1 Empirical Teams
-  p Empirical is an open source organizations composed of teams of contributors. Each team is responsible for a certain part of the site. Explore each team to see what our contributors are building!
+  p Empirical is an open source organization composed of teams of contributors. Each team is responsible for a certain part of the site. Explore each team to see what our contributors are building!
 
   - @teams.each do |team|
     hr
     .team-item
-      h2= link_to team.name, cofactor_team_path(team.slug), style: 'color: inherit; text-decoration: underline'
+      h2= link_to team.name, cofactor_team_path(team.slug) 
       p= markdown team.description.to_s
+
+      button= link_to 'Create a new team', new_cms_team_path 

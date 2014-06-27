@@ -1,3 +1,8 @@
+@mixin link-style() {
+  transition: all 200 ease;
+  text-decoration: none;
+}
+
 .cofactor-team-page {
   background-color: #555;
   color: white;
@@ -36,3 +41,5 @@
     height: 100%;
   }
 }
+
+ a:hover { @include link-style();}
