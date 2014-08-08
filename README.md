@@ -26,3 +26,8 @@ rails s
 ### Troubleshooting
 
 1. __Can't install 'pg' bundle.__ Either install postgres `brew install postgres` or comment out the `gem 'pg'` line in the Gemfile. CoFactor uses sqlite locally.
+2. 
+
+### UML Diagram
+
+![uml diagram](http://i.imgur.com/zpTOUGb.png "Title")
