@@ -18,7 +18,7 @@ rbenv: `rbenv rehash`
 git clone https://github.com/empirical-org/CoFactor.git
 ```
 ```
-cd cofactor
+cd Cofactor
 ```
 ```
 bundle
