@@ -1,4 +1,4 @@
-# Welcome to Empirical Cofactor!
+# Wel come to Empirical Cofactor!
 
 - **Getting Started:** [Start here with this doc.](https://github.com/empirical-org/Documentation/tree/master/Getting-Started) 
 - **CLA:** [Please sign our CLA before contributing.] (https://www.clahub.com/agreements/empirical-org/Documentation)
